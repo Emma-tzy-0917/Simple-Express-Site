@@ -1,0 +1,78 @@
+html{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+	font-size: 28px;
+}
+.test{
+	color: green;
+	font-size:28px;
+}
+.fruit-list{
+	font-size:18px;
+}
+body{
+	padding: 0 0 0 0;
+	margin:10px auto 10px auto;
+	text-align: center;
+}
+
+.header{
+	border: 0;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+.new-fruit{
+	border: 0;
+	margin: 10px 10px 10px 10px;
+	height: 200px;
+}
+
+.delete{
+	height: 15px;
+	width: auto;
+}
+
+.display-current{
+	border: 0;
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+form{
+	display: inline-block;
+	text-align: center;
+}
+
+legend{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+input{
+	width: 500px;
+	margin: 0 auto;
+	font-size: 16px;
+	padding: 5px;
+	border: 2px solid #7facaa;
+	margin-bottom: 7px;
+}
+
+input[type="submit"]{
+	font-size: 12px;
+	width: 120px;
+	border-radius: 7px;
+	border: 1px solid black;
+}
+
+textarea{
+	width: 500px;
+	height: 50px;
+	font-size: 16px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 2px solid #7facaa;
+	margin-bottom: 7px;
+}

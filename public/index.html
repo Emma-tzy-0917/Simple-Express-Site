@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://wwww.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<title>express ex1</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="header">
+		<h3 class="title"> Emma's Fruit List! </h3>
+	</div>
+	<div class="new-fruit">
+		<form> 
+			<legend>Add New Fruit</legend>
+			<input name="fruitName" placeholder="Fruit Name" /><br />
+			<textarea name="fruitDescription" placeholder="Description"></textarea><br />
+			<input type="submit" value="Click to Submit"/>
+		</form>
+	</div>
+	<div class="display-current">
+		<ul class="fruit-list"></ul>
+		<script src="jquery-2.2.2.min.js"></script>
+		<script src="client.js"></script>
+	</div>	
+</body>
+</html>
