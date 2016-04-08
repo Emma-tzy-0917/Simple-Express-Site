@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
+var bodyParser = require("body-parser");
 var parserUrlEncoded = bodyParser.urlencoded({extended:false});
-var logger = require('./logger');
 
 // data stored here
 var fruitData = {
@@ -13,7 +13,7 @@ var fruitData = {
 // parse parameters is now moved to app.route('/:queryFruit').all
 
 // routes here
-app.route('/')
+router.route('/')
 	.get(function(req,res){
 	var fruits = Object.keys(fruitData);
 	res.json(fruits);
@@ -24,7 +24,7 @@ app.route('/')
 		res.status(201).json(newFruit.fruitName);
 	});
 
-app.route('/:queryFruit')
+router.route('/:queryFruit')
 	.all(function(req,res,next) {
 		var name = req.params.queryFruit;
 		var processedName = name.toLowerCase();
@@ -40,4 +40,6 @@ app.route('/:queryFruit')
 		delete fruitData[req.fruitName];
 		res.sendStatus(200);
 	});
+
+module.exports = router;
 
